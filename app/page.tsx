@@ -253,49 +253,48 @@ interface Project {
   description: string;
   technologies: string[];
   image: string;
-  date: string; // Add a date field
+  date: string; 
 }
 const PROJECTS: Project[] = [
   {
     title: "Hack4Good Hackathon - Digital PA App",
-    description:
-      "Participated in Hack4Good, where we developed a web platform to connect NGOs with volunteers. Leveraged data visualization, real-time updates, and an intuitive user interface to enhance community engagement.",
-    technologies: ["React", "Node.js", "Express", "MongoDB"],
+    description: "Developed a cost-effective web application to streamline administrative tasks and enhance productivity for the Singapore Book Council. Key features included a centralized dashboard, automated meeting management, task tracking, email analytics, and an AI-powered assistant for natural language interaction.",
+    technologies: ["React", "Firebase", "JavaScript", "Next.js", "Anthropic API"],
     image: "images/Hack4good.png",
     date: "Jan 2025",
 
   },
   { 
     title:"NUS Maritime Hackathon 2025 - Predicting Inspection Severity",
-    description:"Developed a solution to predict inspection severity in the maritime industry. Utilized feature engineering, synthetic data augmentation, and a custom neural network for accurate predictions.",
-    technologies:["Python", "TensorFlow", "OpenAI API", "Synthetic Data"],
+    description:"Developed a solution to predict inspection severity in the maritime industry. Utilized feature engineering, synthetic data augmentation, and a custom neural network for accurate predictions. Winning a place in the top 3 finalists 🏆.",
+    technologies:["Python", "TensorFlow", "OpenAI API", "Data Preprocessing", "Machine Learning", "Prompt Engineering"],
     image:"images/MReport.png",
     date: "Jan 2025",
   },
   {
     title: "BACT X0PA-AI Hackathon - Candidate Shortlisting Prediction",
     description:
-      "Developed a machine learning pipeline to predict candidate shortlisting outcomes using feature engineering and neural networks.",
-    technologies: ["Python", "OpenAI API", "TensorFlow", "Data Augmentation"],
+      "“Designed and implemented an end-to-end machine learning pipeline to predict candidate shortlisting outcomes. This included data preprocessing, feature engineering, and developing a neural network model. The solution leveraged embeddings generated via the OpenAI API, and data augmentation for class balance. Won 1st Place in the Hackathon 🏆.",
+    technologies: ["Python", "OpenAI API", "TensorFlow", "Data Augmentation", "Word Embeddings"],
     image: "images/bacthackathon.jpeg",
     date: "Aug 2024",
   },
   {
     title: "NUS NextClass App - Orbital",
     description:
-      "Developed a mobile app using Expo Go with an integrated chatbot built with RASA for real-time user interaction.",
-    technologies: ["React Native", "Expo", "RASA", "Chatbot"],
+      "Designed and developed an all-in-one mobile application for NUS students, featuring timetable integration, reminders, shortest path navigation using OpenStreetMap, and a personalized AI chatbot built with RASA for real-time user interaction. Attained Apollo 11 (Advanced Level) certification.",
+    technologies: ["React Native", "Expo", "Firebase", "RASA", "JavaScript"],
     image: "images/orbital.png",
     date: "Aug 2024",
   },
-  {
-    title: "BrainHack SeeTrue Hackathon",
-    description:
-      "Used generative AI tools to create hyper-realistic images, optimized with prompt engineering, achieving Top 3 in a hackathon.",
-    technologies: ["Python", "Generative AI", "Prompt Engineering"],
-    image: "images/brainhack.png",
-    date: "Jun 2024",
-  },
+    {
+      title: "BrainHack SeeTrue Hackathon",
+      description:
+        "Achieved 1st place 🏆 by leveraging generative AI tools, including ComfyUI and Hugging Face models, to create hyper-realistic images. Optimized outputs through  prompt engineering and hyperparameter tuning, successfully fooling AI-based fake image detectors.",
+      technologies: ["Python", "Generative AI", "ComfyUI", "HuggingFace", "Prompt Engineering", "Hyperparameter Tuning"],
+      image: "images/brainhack.png",
+      date: "Jun 2024",
+    },
   {
     title: "Beijing Real Estate EDA Project",
     description: "Analyzed Beijing housing data to determine key factors affecting real estate prices for my module in school, BT2102. Created visualizations for top districts, subway accessibility, and building structures using Tableau.",
