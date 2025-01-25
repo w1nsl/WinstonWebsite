@@ -216,6 +216,10 @@ interface ProjectCardProps {
   project: Project;
 }
 
+interface ProjectsSectionProps {
+  projects: Project[];
+}
+
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
   <motion.div
     whileHover={{ scale: 1.02 }}
