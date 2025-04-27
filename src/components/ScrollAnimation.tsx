@@ -31,13 +31,15 @@ const ScrollAnimation: React.FC<ScrollAnimationProps> = ({
       });
     }, { threshold: 0.1 }); // Lower threshold so elements animate sooner
     
-    if (elementRef.current) {
-      observer.observe(elementRef.current);
+    const currentElement = elementRef.current;
+    
+    if (currentElement) {
+      observer.observe(currentElement);
     }
     
     return () => {
-      if (elementRef.current) {
-        observer.unobserve(elementRef.current);
+      if (currentElement) {
+        observer.unobserve(currentElement);
       }
     };
   }, [delay]);

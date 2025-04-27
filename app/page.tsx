@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import TypingAnimation from "../src/components/TypingAnimation";
 import ScrollAnimation from "../src/components/ScrollAnimation";
 
@@ -149,9 +150,11 @@ const HomeSection: React.FC = () => {
       <div className="max-w-4xl mx-auto text-center px-4 pt-20 z-10">
         {/* Profile Picture */}
         <ScrollAnimation animationType="scale-in" className="flex justify-center mb-6">
-          <img
-            src="images/pfp.png"
+          <Image
+            src="/images/pfp.png"
             alt="Profile"
+            width={288}
+            height={288}
             className="w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full border-4 border-gray-700 shadow-lg hover-glow"
           />
         </ScrollAnimation>
@@ -250,31 +253,31 @@ const AboutSection: React.FC = () => (
       <div className="space-y-6">
         <ScrollAnimation animationType="fade-in">
           <p className="text-base md:text-xl text-gray-300 leading-relaxed">
-            Hi there! I'm Winston, a Year 2 undergraduate at the National University of Singapore, majoring in Business 
-            Analytics. I'm passionate about data science and analytics, and I absolutely love diving into data to uncover 
+            Hi there! I&apos;m Winston, a Year 2 undergraduate at the National University of Singapore, majoring in Business 
+            Analytics. I&apos;m passionate about data science and analytics, and I absolutely love diving into data to uncover 
             hidden insights and solve meaningful problems.
           </p>
         </ScrollAnimation>
         
         <ScrollAnimation animationType="fade-in" delay={200}>
           <p className="text-base md:text-xl text-gray-300 leading-relaxed mt-4 md:mt-6">
-          Right now, I'm looking for opportunities to learn from people doing amazing work, especially in the areas of agentic AI, data science, and finance. 
-          I'm excited to grow, apply what I know, and be part of projects that make a real impact.
+          Right now, I&apos;m looking for opportunities to learn from people doing amazing work, especially in the areas of agentic AI, data science, and finance. 
+          I&apos;m excited to grow, apply what I know, and be part of projects that make a real impact.
           </p>
         </ScrollAnimation>
         
         <ScrollAnimation animationType="fade-in" delay={400}>
           <p className="text-base md:text-xl text-gray-300 leading-relaxed mt-4 md:mt-6">
-            When I'm not working with data, you'll probably find me strumming my guitar, jamming to my favorite songs, or 
-            kicking a ball around on the football field. I'm all about creativity, teamwork, and having fun while pushing myself 
+            When I&apos;m not working with data, you&apos;ll probably find me strumming my guitar, jamming to my favorite songs, or 
+            kicking a ball around on the football field. I&apos;m all about creativity, teamwork, and having fun while pushing myself 
             to be better every day.
           </p>
         </ScrollAnimation>
         
         <ScrollAnimation animationType="fade-in" delay={600}>
           <p className="text-base md:text-xl text-gray-300 leading-relaxed mt-4 md:mt-6">
-            If you'd like to chat about data, music, or just life in general, feel free to connect! I'm always 
-            excited to meet new people and explore opportunities to collaborate. Let's create something amazing together!
+            If you&apos;d like to chat about data, music, or just life in general, feel free to connect! I&apos;m always 
+            excited to meet new people and explore opportunities to collaborate. Let&apos;s create something amazing together!
           </p>
         </ScrollAnimation>
       </div>
@@ -359,9 +362,11 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ company, role, period, 
     <p className="text-base md:text-lg text-gray-400">{company}</p>
     {/* Company Logo */}
     <div className="flex justify-center my-3 md:my-4">
-      <img
+      <Image
         src={`/images/${logo}`}
         alt={`${company} logo`}
+        width={48}
+        height={48}
         className={`w-10 h-10 md:w-12 md:h-12 object-contain ${company === "OCBC" ? "bg-white p-1 rounded" : ""}`}
       />
     </div>
@@ -428,9 +433,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => (
           Your browser does not support the video tag.
         </video>
       ) : (
-        <img
+        <Image
           src={project.image}
           alt={project.title}
+          width={600}
+          height={400}
           className="w-full h-full object-cover opacity-90 transition-all duration-500 hover:opacity-100 hover:scale-105"
         />
       )}
