@@ -506,8 +506,7 @@ const PROJECTS: Project[] = [
     title: "Automated Stock Prediction Pipeline",
     description: "Built a complete ML pipeline using Apache Airflow that integrates multiple data sources including stock prices from Yahoo Finance, economic indicators from FRED, and news sentiment analysis to predict future stock movements. The system features containerized deployment with Docker, NLP-based sentiment analysis using FinBERT, and a scalable architecture for processing data on multiple stocks simultaneously.",
     technologies: ["Python", "Apache Airflow", "Docker", "PostgreSQL", "scikit-learn", "NLP", "FinBERT", "pandas"],
-    image: "images/stock-prediction.png",
-    isVideo: true,
+    image: "/images/stock-prediction.png",
     date: "Apr 2025",
     dashboardLink: "https://stock-prediction-dashboard-final.streamlit.app/",
     dashboardLinkText: "View Dashboard",
@@ -517,7 +516,7 @@ const PROJECTS: Project[] = [
     title: "SmartPlanner",
     description: "A comprehensive task and calendar management application built with Vue 3 and Firebase. SmartPlanner helps users organize daily activities, manage tasks, and collaborate with friends through features like secure authentication, dashboard overviews, calendar integration with FullCalendar, task management, and a friend system for collaboration.",
     technologies: ["Vue 3", "Firebase", "Composition API", "Vue Router", "FullCalendar", "FontAwesome", "Vite"],
-    image: "images/smartplanner.png",
+    image: "/images/smartplanner.png",
     date: "Mar 2025",
     dashboardLink: "https://smartplanner-94044.web.app/",
     dashboardLinkText: "View App",
@@ -527,7 +526,7 @@ const PROJECTS: Project[] = [
     title: "Hack4Good Hackathon - Digital PA App",
     description: "Developed a cost-effective web application to streamline administrative tasks and enhance productivity for the Singapore Book Council. Key features included a centralized dashboard, automated meeting management, task tracking, email analytics, and an AI-powered assistant for natural language interaction.",
     technologies: ["React", "Firebase", "JavaScript", "Next.js", "Anthropic API"],
-    image: "images/Hack4good.png",
+    image: "/images/Hack4good.png",
     date: "Jan 2025",
     githubLink: "https://github.com/w1nsl/Hack4Good"
   },
@@ -535,7 +534,7 @@ const PROJECTS: Project[] = [
     title:"NUS Maritime Hackathon 2025 - Predicting Inspection Severity",
     description:"Developed a solution to predict inspection severity in the maritime industry. Utilized feature engineering, synthetic data augmentation, and a custom neural network for accurate predictions. Winning a place in the top 3 finalists 🏆.",
     technologies:["Python", "TensorFlow", "OpenAI API", "Data Preprocessing", "Machine Learning", "Prompt Engineering"],
-    image:"images/MReport.png",
+    image:"/images/MReport.png",
     date: "Jan 2025",
     isWinner: true,
   },
@@ -544,7 +543,7 @@ const PROJECTS: Project[] = [
     description:
       "Designed and implemented an end-to-end machine learning pipeline to predict candidate shortlisting outcomes. This included data preprocessing, feature engineering, and developing a neural network model. The solution leveraged embeddings generated via the OpenAI API, and data augmentation for class balance. Won 1st Place in the Hackathon 🏆.",
     technologies: ["Python", "OpenAI API", "TensorFlow", "Data Augmentation", "Word Embeddings"],
-    image: "images/bacthackathon.jpeg",
+    image: "/images/bacthackathon.jpeg",
     date: "Aug 2024",
     isWinner: true,
   },
@@ -553,7 +552,7 @@ const PROJECTS: Project[] = [
     description:
       "Designed and developed an all-in-one mobile application for NUS students, featuring timetable integration, reminders, shortest path navigation using OpenStreetMap, and a personalized AI chatbot built with RASA for real-time user interaction. Attained Apollo 11 (Advanced Level) certification.",
     technologies: ["React Native", "Expo", "Firebase", "RASA", "JavaScript"],
-    image: "images/orbital.png",
+    image: "/images/orbital.png",
     date: "Aug 2024",
     githubLink: "https://github.com/w1nsl/nextClass"
   },
@@ -562,7 +561,7 @@ const PROJECTS: Project[] = [
     description:
       "Achieved 1st place 🏆 by leveraging generative AI tools, including ComfyUI and Hugging Face models, to create hyper-realistic images. Optimized outputs through prompt engineering and hyperparameter tuning, successfully fooling AI-based fake image detectors.",
     technologies: ["Python", "Generative AI", "ComfyUI", "HuggingFace", "Prompt Engineering", "Hyperparameter Tuning"],
-    image: "images/brainhack.png",
+    image: "/images/brainhack.png",
     date: "Jun 2024",
     isWinner: true,
   },
@@ -570,7 +569,7 @@ const PROJECTS: Project[] = [
   //   title: "Beijing Real Estate EDA Project",
   //   description: "Analyzed Beijing housing data to determine key factors affecting real estate prices for my module in school, BT2102. Created visualizations for top districts, subway accessibility, and building structures using Tableau.",
   //   technologies: ["Python", "Tableau", "Pandas", "Data Cleaning"],
-  //   image: "images/beijing.png",
+  //   image: "/images/beijing.png",
   //   date: "May 2024",
   // },
   // {
@@ -578,7 +577,7 @@ const PROJECTS: Project[] = [
   //   description: "My first ML project that sparked my passion and interest in data! I generated predictions for USA housing prices using a gradient boosting regressor. I experimented with feature engineering, \
   //   cross-validation, and hyperparameter tuning. Looking back at this project, there is much to improve on 😅.",
   //   technologies: ["Python", "Machine Learning", "Pandas", "Data Cleaning", "Hyperparameter Tuning"],
-  //   image: "images/housing2.png",
+  //   image: "/images/housing2.png",
   // }
 ];
 
