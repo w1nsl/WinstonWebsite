@@ -506,7 +506,7 @@ const PROJECTS: Project[] = [
     title: "Automated Stock Prediction Pipeline",
     description: "Built a complete ML pipeline using Apache Airflow that integrates multiple data sources including stock prices from Yahoo Finance, economic indicators from FRED, and news sentiment analysis to predict future stock movements. The system features containerized deployment with Docker, NLP-based sentiment analysis using FinBERT, and a scalable architecture for processing data on multiple stocks simultaneously.",
     technologies: ["Python", "Apache Airflow", "Docker", "PostgreSQL", "scikit-learn", "NLP", "FinBERT", "pandas"],
-    image: "images/stock-prediction.mp4",
+    image: "images/stock-prediction.png",
     isVideo: true,
     date: "Apr 2025",
     dashboardLink: "https://stock-prediction-dashboard-final.streamlit.app/",
